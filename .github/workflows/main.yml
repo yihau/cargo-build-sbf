@@ -1,0 +1,26 @@
+name: Test and check
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test_check:
+    name: Test and Check
+    strategy:
+      matrix:
+        os:
+          # These are all the targets we build the tools for
+          - ubuntu-22.04
+          - ubuntu-22.04-arm
+          - macos-latest
+          - macos-15-intel
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      - run: |
+          echo "✅"
