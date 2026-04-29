@@ -26,6 +26,7 @@ pub struct Config<'a> {
     pub install_only: bool,
     pub patch_binaries_for_nix: Option<bool>,
     pub use_abi_v2: bool,
+    pub sbf_stack_size: Option<u32>,
 }
 
 impl Default for Config<'_> {
@@ -55,6 +56,7 @@ impl Default for Config<'_> {
             install_only: false,
             patch_binaries_for_nix: None,
             use_abi_v2: false,
+            sbf_stack_size: None,
         }
     }
 }
