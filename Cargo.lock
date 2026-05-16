@@ -229,6 +229,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "cargo-build-sbf"
+version = "4.0.0"
+dependencies = [
+ "agave-logger",
+ "assert_cmd",
+ "bzip2",
+ "cargo_metadata",
+ "clap",
+ "itertools",
+ "log",
+ "predicates",
+ "regex",
+ "reqwest 0.12.28",
+ "semver",
+ "serde",
+ "serial_test",
+ "solana-file-download",
+ "solana-keypair",
+ "tar",
+]
+
+[[package]]
 name = "cargo-platform"
 version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2018,28 +2040,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "085db4906d89324cef2a30840d59eaecf3d4231c560ec7c9f6614a93c652f501"
 dependencies = [
  "parking_lot",
-]
-
-[[package]]
-name = "solana-cargo-build-sbf"
-version = "4.0.0"
-dependencies = [
- "agave-logger",
- "assert_cmd",
- "bzip2",
- "cargo_metadata",
- "clap",
- "itertools",
- "log",
- "predicates",
- "regex",
- "reqwest 0.12.28",
- "semver",
- "serde",
- "serial_test",
- "solana-file-download",
- "solana-keypair",
- "tar",
 ]
 
 [[package]]

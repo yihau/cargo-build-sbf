@@ -1,8 +1,5 @@
 use {
-    cargo_metadata::camino::Utf8PathBuf,
-    clap::{Arg, crate_description, crate_name, crate_version},
-    log::*,
-    solana_cargo_build_sbf::{
+    cargo_build_sbf::{
         config::Config,
         post_processing::post_process,
         toolchain::{
@@ -13,6 +10,9 @@ use {
         },
         utils::{is_version_string, spawn},
     },
+    cargo_metadata::camino::Utf8PathBuf,
+    clap::{Arg, crate_description, crate_name, crate_version},
+    log::*,
     std::{
         borrow::Cow,
         env,

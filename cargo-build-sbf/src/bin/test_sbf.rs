@@ -1,7 +1,7 @@
 use {
+    cargo_build_sbf::utils::{is_version_string, spawn},
     clap::{Arg, crate_description, crate_name, crate_version},
     log::*,
-    solana_cargo_build_sbf::utils::{is_version_string, spawn},
     std::{
         env,
         path::{Path, PathBuf},
